@@ -1,0 +1,11 @@
+button.attack {
+    cursor: pointer;
+    background-color: red;
+    color: black;
+}
+
+button.retreat {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}

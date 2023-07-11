@@ -35,6 +35,8 @@ const ussAssembly = new ship(20, 5, 7, "ussAssembly");
 let alienShips = [];
 
 // create a function to put the whole for loop inside to be called for your button
+function attackButton() {
+
 
 // would have to pass in these values , and would need to use math.random
 for (let i = 0; i <= 5; i++) {
@@ -52,6 +54,9 @@ for (let i = 0; i <= 5; i++) {
   alienShip.shipFight(ussAssembly);
   }
   
+}
+
+
 }
 
 // write attack function that whenever your ship starts to attack alien ships, it keeps attacking until it gets destroyed
