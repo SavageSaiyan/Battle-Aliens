@@ -43,21 +43,22 @@ for (let i = 0; i <= 5; i++) {
   const accuracy = Math.floor(Math.random() * 0.8) + 0.6;
   const alienShip = new ship(hull, firepower, accuracy, `alien ${i}`);
   alienShips.push(alienShip);
-  
+
   while (ussAssembly.hull > 0 && alienShip.hull > 0) {
     if (ussAssembly.hull <= 0 || alienShip.hull <= 0) {
       break; // if ( uss.hull <= 0) { console.log ('we have been instantiated, mission failed') break}
     }
-  }
-  ussAssembly.shipFight(alienShip);
+    ussAssembly.shipFight(alienShip);
   alienShip.shipFight(ussAssembly);
+  }
+  
 }
 
 // write attack function that whenever your ship starts to attack alien ships, it keeps attacking until it gets destroyed
 
 // retreat function
-// function retreat() {
-//   // when this function is called , you can reset the game.
-//   console.log("You have retreated. Game Over.");
-//   return;
-// }
+function retreat() {
+  // when this function is called , you can reset the game.
+  console.log("You have retreated. Game Over.");
+  return;
+}
